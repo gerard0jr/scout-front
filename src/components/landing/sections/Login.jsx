@@ -50,7 +50,7 @@ const Login = ({user}) => {
             </div>
             <div className="black-bg">
                 <p>¿Aún no tienes una cuenta en ScoutLink?</p>
-                <Link to="/register">¡Únete a ScoutLink Hoy!</Link>
+                <Link to="/signup">¡Únete a ScoutLink Hoy!</Link>
             </div>
         </div>
     </div>

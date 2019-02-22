@@ -5,6 +5,7 @@ import GeneralForm from './GeneralForm';
 import PersonalForm from './PersonalForm';
 import PlayerForm from './PlayerForm';
 import TermsAndConditions from './TermsAndConditions';
+import Footer from './Footer';
 
 const { Step } = Steps
 
@@ -71,7 +72,8 @@ export default class Signup extends Component {
                     && <Button type="primary" onClick={() => next()}>Continuar</Button>
                 }
             </div>
-        </div>        
+        </div>  
+        <Footer/>      
     </div>
     )}
 }
