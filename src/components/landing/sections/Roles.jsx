@@ -39,7 +39,7 @@ const Roles = () => {
         <div className='card-content'>
             <h3>{roles[index].title.toUpperCase()}</h3>
             <p>{roles[index].content}</p>
-            <Button className="landing-register-button" type="primary">Registrare como&nbsp; {roles[index].title}</Button>
+            <Button className="landing-register-button" type="primary">Registrarme como&nbsp; {roles[index].title}</Button>
         </div>
       </div>})}
     </div>

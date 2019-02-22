@@ -24,7 +24,7 @@ const Login = ({user}) => {
                     >
                         <Input 
                             prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />} 
-                            placeholder='leonel@messi.com' 
+                            placeholder='lionel@messi.com' 
                             value={user}
                         />
                     </Form.Item>

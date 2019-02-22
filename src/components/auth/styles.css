@@ -1,0 +1,47 @@
+.logo{
+    text-align: left;
+    padding: 1rem 3rem;
+    box-sizing: border-box;
+}
+
+.logo img{
+    width: 250px;
+}
+
+.steps-content {
+    margin-top: 16px;
+    border: 1px dashed #e9e9e9;
+    border-radius: 6px;
+    background-color: #fafafa;
+    min-height: 200px;
+    text-align: center;
+    padding-top: 2rem;
+}
+  
+.steps-action {
+    margin-top: 24px;
+}
+
+.ant-steps{
+    justify-content: space-around;
+}
+
+.ant-steps-item{
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+.header-2{
+    margin-bottom: 1.5rem;
+}
+
+.group-inputs{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.input{
+    width: 25%;
+}
