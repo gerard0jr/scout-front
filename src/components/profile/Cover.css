@@ -4,6 +4,15 @@
   margin-top: 64px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.scoutlink-profile-presentation {
+  width: 90%;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .scoutlink-profile-container {
@@ -37,7 +46,7 @@
 .scoutlink-profile-button {
   display: flex;
   flex-direction: column;
-  margin: -200px 10px 0 200px;
+  margin: -200px 10px 0 50px;
 }
 
 .scoutlink-profile-data h2, p {
@@ -122,4 +131,12 @@
 
 .scoutlink-selector-item span {
   font-weight: bold;
+}
+
+.scoutlink-selector-item span.selected {
+  font-weight: bold;
+  color: #EB7803;
+  border-bottom-style: solid;
+  height: 50px;
+  width: 120%;
 }
