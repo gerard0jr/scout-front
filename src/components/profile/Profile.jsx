@@ -1,13 +1,19 @@
 import React from 'react'
 import Navbar from '../general/Navbar';
 import Cover from './Cover';
+import Footer from '../general/Footer';
+import Videos from './Videos';
+import './Profile.css'
 
 const Profile = () => {
   return (
     <>
       <Navbar />
-      <h2>Perfil jugador</h2>
-      <Cover />
+      <div className="profile-container">
+        <Cover />
+        <Videos />
+        <Footer />
+      </div>
     </>
   )
 }
