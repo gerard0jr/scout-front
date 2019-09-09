@@ -4,6 +4,7 @@ import Cover from './Cover';
 import Footer from '../general/Footer';
 import Videos from './Videos';
 import './Profile.css'
+import Posts from './Posts';
 
 const Profile = () => {
   return (
@@ -12,6 +13,7 @@ const Profile = () => {
       <div className="profile-container">
         <Cover />
         <Videos />
+        <Posts />
         <Footer />
       </div>
     </>
