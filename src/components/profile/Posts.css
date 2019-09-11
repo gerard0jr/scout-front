@@ -1,0 +1,42 @@
+.posts-container {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.posts-container h3 {
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.post-upload {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+}
+
+.post-upload-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-upload-input p {
+  color: black;
+  text-shadow: none;
+}
+
+.post-upload img {
+  width: 100px;
+  border-radius: 50%;
+  margin: 0 20px;
+}
+
+.post-upload-input input {
+  width: 600px;
+}
