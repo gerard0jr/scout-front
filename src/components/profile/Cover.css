@@ -49,11 +49,22 @@
   margin: -200px 10px 0 50px;
 }
 
-.scoutlink-profile-data h2, p {
+
+
+.scoutlink-profile-data h2 {
   color: white;
   font-weight: bold;
   text-align: left;
-  text-shadow: 2px 2px 4px #000;
+  /* text-shadow: 2px 2px 4px #000; */
+  /* -webkit-text-stroke: 1px black; */
+}
+
+.scoutlink-profile-data p {
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  /* text-shadow: 2px 2px 4px #000; */
+  /* -webkit-text-stroke: 1px black; */
 }
 
 .scoutlink-profile-data h2 {
