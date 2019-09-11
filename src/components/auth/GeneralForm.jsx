@@ -9,9 +9,9 @@ const GeneralForm = ({name, paternal, maternal, country, city, col, email, passw
       <div className="group-inputs">
         {/* Nombre */}
         <div className="input">
-          <p>Nombre(s):</p>
+          <p>Nombre(s)</p>
           <Input 
-            onChange={handleChange}
+            onChange={handleChange()}
             value={name} 
             placeholder="Lionel"
             name="name"
@@ -19,9 +19,9 @@ const GeneralForm = ({name, paternal, maternal, country, city, col, email, passw
         </div>
         {/* Apellido Paterno */}
         <div className="input">
-          <p>Apellido paterno:</p>
+          <p>Apellido paterno</p>
           <Input 
-            onChange={handleChange}
+            onChange={handleChange()}
             value={paternal} 
             placeholder="Messi"
             name="paternal"
@@ -29,9 +29,9 @@ const GeneralForm = ({name, paternal, maternal, country, city, col, email, passw
         </div>
         {/* Apellido Materno */}
         <div className="input">
-          <p>Apellido Materno:</p>
+          <p>Apellido Materno</p>
           <Input 
-            onChange={handleChange}
+            onChange={handleChange()}
             value={maternal} 
             placeholder="Sánchez"
             name="maternal"
@@ -42,9 +42,9 @@ const GeneralForm = ({name, paternal, maternal, country, city, col, email, passw
       <div className="group-inputs">
         {/* País */}
         <div className="input">
-          <p>País de residencia:</p>
+          <p>País de residencia</p>
           <Input 
-            onChange={handleChange}
+            onChange={handleChange()}
             value={country} 
             placeholder="México"
             name="country"
@@ -53,9 +53,9 @@ const GeneralForm = ({name, paternal, maternal, country, city, col, email, passw
         </div>
         {/* Ciudad */}
         <div className="input">
-          <p>Ciudad:</p>
+          <p>Ciudad</p>
           <Input 
-            onChange={handleChange}
+            onChange={handleChange()}
             value={city} 
             placeholder="CDMX"
             name="city"
@@ -64,9 +64,9 @@ const GeneralForm = ({name, paternal, maternal, country, city, col, email, passw
         </div>
         {/* Colonia */}
         <div className="input">
-          <p>Colonia:</p>
+          <p>Colonia</p>
           <Input 
-            onChange={handleChange}
+            onChange={handleChange()}
             value={col} 
             placeholder="Avante"
             name="col"
@@ -78,9 +78,9 @@ const GeneralForm = ({name, paternal, maternal, country, city, col, email, passw
       <div className="group-inputs">
         {/* Correo */}
         <div className="input">
-          <p>Correo electrónico:</p>
+          <p>Correo electrónico</p>
           <Input 
-            onChange={handleChange}
+            onChange={handleChange()}
             value={email} 
             placeholder="lionel@messi.com"
             name="email"
@@ -88,9 +88,9 @@ const GeneralForm = ({name, paternal, maternal, country, city, col, email, passw
         </div>
         {/* Contraseña */}
         <div className="input">
-          <p>Contraseña:</p>
+          <p>Contraseña</p>
           <Input 
-            onChange={handleChange}
+            onChange={handleChange()}
             type="password"
             value={password} 
             name="password"
@@ -98,7 +98,7 @@ const GeneralForm = ({name, paternal, maternal, country, city, col, email, passw
         </div>
         {/* Apellido Materno */}
         <div className="input">
-          <p>Repite la contraseña:</p>
+          <p>Repite la contraseña</p>
           <Input 
             type="password"
           />

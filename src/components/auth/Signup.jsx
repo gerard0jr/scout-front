@@ -26,10 +26,12 @@ export default class Signup extends Component {
         title: 'Términos y condiciones'
       }]
 
-    handleChange = e => {
-        console.log(e)
+    handleChange = e => value => {
         const { player } = this.state
-        player[e.target.name] = e.target.value
+        if(e === 'contractExpires'){player[e] = value._d; return this.setState({player})}
+        if(typeof e === 'string'){player[e] = value; return this.setState({player})}
+        // Estas líneas de abajo manejan a los inputs de puro texto
+        player[value.target.name] = value.target.value
         this.setState({player}, ()=>console.log(player))
     }
 
@@ -54,8 +56,8 @@ export default class Signup extends Component {
             </Steps>
             <div className="steps-content">{
                 current === 0 ? <GeneralForm {...player} handleChange={handleChange}/> : 
-                current === 1 ? <PlayerForm /> :
-                current === 2 ? <PersonalForm /> :
+                current === 1 ? <PlayerForm {...player} handleChange={handleChange}/> :
+                current === 2 ? <PersonalForm {...player} handleChange={handleChange}/> :
                 current === 3 ? <TermsAndConditions /> : ''
             }</div>
             <div className="steps-action">
