@@ -41,21 +41,22 @@ const posts = {
 const Posts = () => {
   return(
     <>
-    <div className="posts-container">
-      <h3>MIS PUBLICACIONES</h3>
-      <div className="post-upload">
-        <img src={profilePic} alt="Profile pic"/>
-        <div className="post-upload-input">
-          <p>{userName}</p>
-          <Input placeholder="Escribe tu publicación aquí..." 
-            suffix={<><Icon type="environment" style={{ color: 'rgba(0,0,0,.25)' }} />
-                    &nbsp;
-                    <Icon type="camera" style={{ color: 'rgba(0,0,0,.25)' }} /></>}/>
+      <div className="posts-container">
+        <h3>MIS PUBLICACIONES</h3>
+        <div className="post-upload">
+          <img src={profilePic} alt="Profile pic"/>
+          <div className="post-upload-input">
+            <p>{userName}</p>
+            <Input placeholder="Escribe tu publicación aquí..." 
+              suffix={<><Icon type="environment" style={{ color: 'rgba(0,0,0,.25)' }} />
+                      &nbsp;
+                      <Icon type="camera" style={{ color: 'rgba(0,0,0,.25)' }} /></>}/>
+          </div>
         </div>
+        {Object.values(posts).map(p => 
+          <PostCard key={p._id} post={p} />)}
+        <span className="posts-load">Cargar más</span>
       </div>
-      {Object.values(posts).map(p => 
-        <PostCard key={p._id} post={p} />)}
-    </div>
     </>
   )
 }
