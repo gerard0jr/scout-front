@@ -8,6 +8,10 @@
   margin-top: 50px;
 }
 
+.metrics-board-container h4 {
+  color: #EB7803;
+}
+
 .metrics-board-container img {
   height: 50px;
   width: auto;

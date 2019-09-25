@@ -1,6 +1,7 @@
 import React from 'react'
 import MetricsBoard from './MetricsBoard';
 import './Metrics.css'
+import MetricsPsycho from './MetricsPsycho';
 
 const Metrics = ({ player }) => {
   return(
@@ -11,6 +12,7 @@ const Metrics = ({ player }) => {
         <MetricsBoard player={player} category="2" />
         <MetricsBoard player={player} category="3" />
       </div>
+      <MetricsPsycho />
     </>
   )
 }
