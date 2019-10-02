@@ -2,6 +2,7 @@ import React from 'react'
 import MembershipDetails from './MembershipDetails';
 import SportDescription from './SportDescription';
 import Metrics from './Metrics';
+import PersonalInfo from './PersonalInfo';
 
 const player = {
   "membership":"Master",
@@ -56,6 +57,7 @@ const SportRecord = () => {
       <MembershipDetails player={player} />
       <SportDescription player={player} />
       <Metrics player={player} />
+      <PersonalInfo />
     </>
   )
 }

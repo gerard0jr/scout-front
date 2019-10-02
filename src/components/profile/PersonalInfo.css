@@ -1,0 +1,67 @@
+.personal-info-container {
+  width: 90%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.data-container {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.education {
+  width: 45%;
+  padding: 0 20px;
+}
+
+.education > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.education h5 {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.education ul {
+  text-align: left;
+}
+
+.language {
+  width: 45%;
+}
+
+.language h5 {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.language-detail {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.language-detail-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-bar {
+  display: flex;
+  width: 50%;
+}
+
+.language-title {
+  text-align: left;
+  margin: 10px 0;
+}
