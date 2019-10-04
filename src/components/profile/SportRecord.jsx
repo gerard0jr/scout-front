@@ -3,6 +3,7 @@ import MembershipDetails from './MembershipDetails';
 import SportDescription from './SportDescription';
 import Metrics from './Metrics';
 import PersonalInfo from './PersonalInfo';
+import ViewerNotes from './ViewerNotes';
 
 const player = {
   "membership":"Master",
@@ -58,6 +59,7 @@ const SportRecord = () => {
       <SportDescription player={player} />
       <Metrics player={player} />
       <PersonalInfo />
+      <ViewerNotes />
     </>
   )
 }

@@ -1,0 +1,14 @@
+.viewer-notes-container {
+  width: 90%;
+  margin: 20px 0;
+}
+
+.viewer-notes-container h3 {
+  margin: 30px;
+}
+
+.vnotes-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
