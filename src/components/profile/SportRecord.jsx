@@ -48,6 +48,9 @@ const player = {
       "repetitionTime":"00.60",
       "repetitionPrecision":80,
       "powerReductionRepetition":80,
+    },
+    "psycho":{
+      "attitude":"Colaborativa"
     }
   }
 }

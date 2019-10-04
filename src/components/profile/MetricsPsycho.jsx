@@ -1,7 +1,7 @@
 import React from 'react'
 import './MetricsPsycho.css'
 
-const MetricsPsycho = () => {
+const MetricsPsycho = ({ player }) => {
   return(
     <>
       <div className="metrics-psycho-container">
@@ -10,7 +10,7 @@ const MetricsPsycho = () => {
         <div className="metrics-psycho-attitudes">
           <div>
             <span>Actitud en el juego</span>
-            <span>Colavorativa</span>
+            <span>{player.metrics.psycho.attitude}</span>
           </div>
           <div>
             <span>Disposición</span>

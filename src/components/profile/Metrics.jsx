@@ -12,7 +12,7 @@ const Metrics = ({ player }) => {
         <MetricsBoard player={player} category="2" />
         <MetricsBoard player={player} category="3" />
       </div>
-      <MetricsPsycho />
+      <MetricsPsycho player={player} />
     </>
   )
 }

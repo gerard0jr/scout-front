@@ -1,0 +1,9 @@
+.language-detail-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-bar {
+  display: flex;
+  width: 50%;
+}
