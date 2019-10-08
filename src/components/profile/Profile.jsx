@@ -4,7 +4,8 @@ import Cover from './Cover';
 import Footer from '../general/Footer';
 import './Profile.css'
 // import Presentation from './Presentation';
-import SportRecord from './SportRecord';
+import Record from './record/Record'
+// import SportRecord from './SportRecord';
 
 const Profile = () => {
   return (
@@ -13,7 +14,8 @@ const Profile = () => {
       <div className="profile-container">
         <Cover />
         {/* <Presentation /> */}
-        <SportRecord />
+        <Record />
+        {/* <SportRecord /> */}
         <Footer />
       </div>
     </>
