@@ -56,3 +56,30 @@
     font-size: 1rem;
     padding: 0.7rem;
 }
+
+.tabla-cualidades{
+    margin: 1em auto;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 0.5em;
+}
+  
+th {
+    padding: 0 1em;
+    max-width: 150px;
+}
+
+.terms-container{
+    width: 80vw;
+    margin: 0 auto;
+    height: 50vh;
+    overflow-y: scroll;
+    background-color: gainsboro;
+    padding: 2rem 4rem;
+}
+
+.read-container{
+    margin: 2rem 0;
+}

@@ -13,7 +13,8 @@ export default class Signup extends Component {
     
     state = {
         current: 0,
-        player: {}
+        player: {},
+        qualities: {}
     }
 
     steps = [{
@@ -27,9 +28,17 @@ export default class Signup extends Component {
       }]
 
     handleChange = e => value => {
-        const { player } = this.state
+        console.log(e)
+        console.log(value)
+        const { player, qualities } = this.state
         if(e === 'contractExpires'){player[e] = value._d; return this.setState({player})}
-        if(typeof e === 'string'){player[e] = value; return this.setState({player})}
+        if(e === 'radio') {
+            qualities[value.target.name] = value.target.value
+            player['qualities'] = qualities
+            console.log(player)
+            return this.setState({player})
+        }
+        if(typeof e === 'string'){player[e] = value; return this.setState({player}, () => console.log(player))}
         // Estas líneas de abajo manejan a los inputs de puro texto
         player[value.target.name] = value.target.value
         this.setState({player}, ()=>console.log(player))

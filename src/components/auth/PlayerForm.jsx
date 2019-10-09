@@ -1,7 +1,7 @@
 import React from 'react'
-import { Select, Input, DatePicker, Table, Radio } from 'antd';
+import { Select, Input, DatePicker } from 'antd';
 import './styles.css'
-import RadioGroup from 'antd/lib/radio/group';
+import QualitiesTable from './QualitiesTable';
 
 const { TextArea } = Input
 const { Option } = Select
@@ -127,7 +127,7 @@ const PlayerForm = ({handleChange, team, league, gamePosition,
       </div>
       <div className="group-inputs" style={{flexDirection:"column", alignItems:"center"}}>
         <p>Califique cómo siente en cada una de las siguientes cualidades</p>
-        <Table pagination={false} dataSource={dataSource} columns={columns} />
+        <QualitiesTable handleChange={handleChange} />
       </div>
       <div className="group-inputs">
         <div style={{width:'100%'}}>
@@ -150,37 +150,5 @@ const PlayerForm = ({handleChange, team, league, gamePosition,
     </div>
   )
 }
-
-const columns = [{
-  title: 'Cualidad',
-  dataIndex: 'quality',
-  key: 'quality',
-}, {
-  title: 'Excelente',
-  dataIndex: 'excellent',
-  key: 'excellent',
-}, {
-  title: 'Bueno',
-  dataIndex: 'good',
-  key: 'good',
-}, {
-  title: 'Ni bueno ni malo',
-  dataIndex: 'normal',
-  key: 'normal',
-}, {
-  title: 'Me cuesta trabajo',
-  dataIndex: 'notGood',
-  key: 'notGood',
-}, {
-  title: 'Tengo que desarrollar esta actividad',
-  dataIndex: 'bad',
-  key: 'bad',
-}]
-
-const dataSource = [{
-  key: '1',
-  quality: 'Velocidad',
-  options: <RadioGroup><Radio /></RadioGroup>,
-}];
 
 export default PlayerForm
