@@ -76,7 +76,7 @@ export default class Signup extends Component {
                 }
                 {
                     current === steps.length - 1
-                    && <Button type="primary" onClick={() => message.success('¡Proceso completado!')}>Registrarme</Button>
+                    && <Button type="primary" onClick={() => {message.success('¡Proceso completado!'); this.props.history.push('/profile')}}>Registrarme</Button>
                 }
                 {
                     current < steps.length -1 

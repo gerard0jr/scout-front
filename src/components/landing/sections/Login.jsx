@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles.css'
 import { Input, Icon, Form, Checkbox, Button } from 'antd';
 import { Link } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 
-const Login = ({user}) => {
+const Login = (props) => {
+
+    const [user, setUser] = useState(null)
+    const [password, setPassword] = useState(null)
+
+    const handleSubmit = () => {
+        props.history.push('/profile')
+        console.log(user)
+        console.log(password)
+    }
+
   return (
     <div className="hero-image">
         <div className="hero-text">
@@ -26,6 +37,7 @@ const Login = ({user}) => {
                             prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />} 
                             placeholder='lionel@messi.com' 
                             value={user}
+                            onChange={e => setUser(e.target.value)}
                         />
                     </Form.Item>
                     <Form.Item
@@ -36,13 +48,14 @@ const Login = ({user}) => {
                             prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} 
                             type="password" 
                             placeholder="******" 
-                            value={user}
+                            value={password}
+                            onChange={e => setPassword(e.target.value)}
                         />
                     </Form.Item>
                     <Form.Item>
                         <Checkbox className='login-form-remember'>Recordarme</Checkbox>
                         <Link className="login-form-forgot" to="/forgot-password">Olvidé mi contraseña</Link>
-                        <Button type="primary" htmlType="submit" className="login-form-button">
+                        <Button onClick={handleSubmit} type="primary" className="login-form-button">
                             Iniciar Sesión
                         </Button>
                     </Form.Item>
@@ -57,4 +70,4 @@ const Login = ({user}) => {
   )
 }
 
-export default Login
+export default withRouter(Login)
