@@ -1,0 +1,31 @@
+.language {
+  width: 45%;
+}
+
+.language h5 {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.language-detail {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+/* .language-detail-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-bar {
+  display: flex;
+  width: 50%;
+} */
+
+.language-title {
+  text-align: left;
+  margin: 10px 0;
+}

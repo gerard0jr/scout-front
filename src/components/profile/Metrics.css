@@ -1,0 +1,6 @@
+.metrics-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
