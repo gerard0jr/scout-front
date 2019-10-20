@@ -2,9 +2,10 @@ import React from 'react'
 import Navbar from '../general/Navbar';
 import Cover from './Cover';
 import Footer from '../general/Footer';
-import Videos from './Videos';
 import './Profile.css'
-import Posts from './Posts';
+// import Presentation from './Presentation';
+import Record from './record/Record'
+// import SportRecord from './SportRecord';
 
 const Profile = () => {
   return (
@@ -12,8 +13,9 @@ const Profile = () => {
       <Navbar />
       <div className="profile-container">
         <Cover />
-        <Videos />
-        <Posts />
+        {/* <Presentation /> */}
+        <Record />
+        {/* <SportRecord /> */}
         <Footer />
       </div>
     </>

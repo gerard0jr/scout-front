@@ -1,0 +1,54 @@
+.importance-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  margin: 30px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.importance-container h3 {
+  width: 80%;
+  font-size: 1.5rem;
+  margin: 20px 0;
+  color: white;
+  text-align: left;
+}
+
+.importance-container a {
+  width: 80%;
+  font-size: 1rem;
+  color: white;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.importance-counters {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.importance-counter {
+  width: 250px;
+  height: 100px;
+  margin: 20px 0;
+  background-color: white;
+  color: #006ab1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter-value {
+  font-size: 2rem;
+  margin: 20px;
+}
+
+.counter-desc {
+  font-size: 1.3rem;
+}
