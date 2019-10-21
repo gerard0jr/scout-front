@@ -11,7 +11,7 @@ const score = 2140
 const followers = 224 
 const descPlayer = "Tiene mucho fútbol para mostrar y aprender. Es una figura importantísima del país. Con su edad, ya es titular. Para muchos, es impensable tener, como una de las figuras de la selección, un joven de 21 años. Pero es buena para todos. Puede ser mejor que yo. Puede ser el mejor jugador colombiano de la historia."
 
-const Cover = () => {
+const Cover = ({category, setCategory}) => {
   return(
     <>
       <div className="cover-container">
@@ -53,17 +53,17 @@ const Cover = () => {
             </p>
           </div>
           <div className="scoutlink-profile-selector">
-            <div className="scoutlink-selector-item">
-              <img src="/img/profile/presentacion_personal_icono_naranja.png" alt="Presentación"/>
-              <span className="selected">PRESENTACIÓN PERSONAL</span>
+            <div onClick={() => setCategory('presentation')} className="scoutlink-selector-item">
+              <img src={category === 'presentation' ? "/img/profile/presentacion_personal_icono_naranja.png" : "/img/profile/presentacion_personal_icono_gris.png"} alt="Presentación"/>
+              <span className={category === 'presentation' ? "selected" : null}>PRESENTACIÓN PERSONAL</span>
             </div>
-            <div className="scoutlink-selector-item">
-              <img src="/img/profile/historial_icono_gris.png" alt="Historial"/>
-              <span>MI HISTORIAL</span>
+            <div onClick={() => setCategory('record')} className="scoutlink-selector-item">
+              <img src={category === 'record' ? "/img/profile/historial_icono_naranja.png" : "/img/profile/historial_icono_gris.png"} alt="Historial"/>
+              <span className={category === 'record' ? "selected" : null}>MI HISTORIAL</span>
             </div>
-            <div className="scoutlink-selector-item">
-              <img src="/img/profile/expediente_icono_gris.png" alt="Expediente"/>
-              <span>MI EXPEDIENTE DEPORTIVO</span>
+            <div onClick={() => setCategory('sportRecord')} className="scoutlink-selector-item">
+              <img src={category === 'sportRecord' ? "/img/profile/expediente_icono_naranja.png" : "/img/profile/expediente_icono_gris.png"} alt="Expediente"/>
+              <span className={category === 'sportRecord' ? "selected" : null}>MI EXPEDIENTE DEPORTIVO</span>
             </div>
           </div>
         </div>
