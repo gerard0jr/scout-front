@@ -10,19 +10,19 @@ const videos = {
   0:{
     '_id':1,
     'src':video1,
-    'title':'Goal',
+    'title':'Mejores Goles',
     'date':'5 de mayo de 2018'
   },
   1:{
     '_id':2,
     'src':video2,
-    'title':'Field',
+    'title':'Final de Copa',
     'date':'7 de junio de 2019'
   },
   2:{
     '_id':3,
     'src':video3,
-    'title':'Polloyón',
+    'title':'Técnica de Golpeo',
     'date':'12 de diciembre de 2019'
   }
 }

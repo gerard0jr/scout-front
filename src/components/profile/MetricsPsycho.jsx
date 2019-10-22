@@ -19,7 +19,7 @@ const MetricsPsycho = ({ player }) => {
         </div>
         <h5>Psicología del jugador</h5>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse nihil cupiditate, quisquam quaerat autem porro atque consectetur ducimus non dolor reiciendis delectus unde accusamus temporibus provident voluptate ea minus dignissimos.
+          Jugador emocionalmente estable, altamente competitivo, amplio espectro de adaptación a las circunstancias, responsable con tendencia a ser líder.
         </p>
       </div>
     </>

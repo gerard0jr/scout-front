@@ -20,7 +20,7 @@ const Importance = () => {
           <span className="counter-desc">Likes en tus publicaciones</span>
         </div>
       </div>
-      <Link to="/">Ver más</Link>
+      <Link to="/profile">Ver más</Link>
     </div>
   )
 }

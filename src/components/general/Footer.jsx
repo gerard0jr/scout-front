@@ -19,7 +19,7 @@ const Footer = () => {
           <span>Síguenos en:</span>
           <img src="/img/footer/facebook_logo.png" alt="Facebook"/>
           <img src="/img/footer/twitter_logo.png" alt="Twitter"/>
-          <img src="/img/footer/linkedin_logo.png" alt="LinkedIn"/>
+          <img src="/img/footer/ig.png" alt="Instagram"/>
         </div>
       </div>
     </>

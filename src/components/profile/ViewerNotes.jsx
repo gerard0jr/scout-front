@@ -1,27 +1,27 @@
 import React from 'react'
 import './ViewerNotes.css'
-import VNote from './VNote';
+import VNote from './VNote'
 
 const notes = [
   {
-    viewer:"Nombre de visor W",
+    viewer:"Miguel Ángel López",
     date:"5 de mayo de 2019",
-    text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolores enim soluta, dolore quas suscipit consequatur, rem amet quae at quisquam blanditiis quod nobis est fugiat esse. Nam, aliquid natus."
+    text:"Jugador habilidoso con gran profundidad y con sacrificio a la defensa, maneja ambas piernas de manera magistral y con muy buen fondo físico."
   },
   {
-    viewer:"Nombre de visor X",
+    viewer:"Ramón Velarde",
     date:"13 de junio de 2019",
-    text:"Lonsectetur adipisicing elit. Et dolores enim soluta, dolore quas suscipit consequatur, rem amet quae at quisquam blanditiis quod nobis est fugiat esse. Nam, aliquid natus orem ipsum dolor sit amet c."
+    text:"Jugador con gran presencia física en el terreno de juego, buen manejo de balón, con gran visión de campo y manejo de ambos perfiles."
   },
   {
-    viewer:"Nombre de visor Y",
+    viewer:"Enrique Carbajal",
     date:"2 de agosto de 2019",
-    text:"Lipsum dolor sit amet consectetur adipisicing elit. Et dolores enim soluta, dolore quas suscipit consequatur, rem amet quae at quisquam blanditiis quod nobis est fugiat esse. Nam, aliquid natusorem."
+    text:"De lo mejor que he visto, propuesto para el campamento de verano, gran jugador con gran visión en el terreno de juego."
   },
   {
-    viewer:"Nombre de visor Z",
+    viewer:"Joaquín Morales",
     date:"3 de septiembre de 2019",
-    text:"Ladipisicing elit. Et dolores enim soluta, dolore quas suscipit consequatur, rem amet quae at quisquam blanditiis quod nobis est fugiat esse. Nam, aliquid natus orem ipsum dolor sit amet consectetur."
+    text:"Jugador con muy buena técnica, le falta manejar los tiempos, acelerado, pero con muy buen fondo físico y gran visión de campo."
   }
 ]
 

@@ -5,11 +5,11 @@ import './Cover.css'
 const coverImg = "https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1495&q=80"
 const userName = "Charles Random"
 const userDesc = "Jugador pro en Selección del Mundo"
-const position = "Crack"
+const position = "Defensa"
 const ranking = "1ro"
 const score = 2140
 const followers = 224 
-const descPlayer = "Tiene mucho fútbol para mostrar y aprender. Es una figura importantísima del país. Con su edad, ya es titular. Para muchos, es impensable tener, como una de las figuras de la selección, un joven de 21 años. Pero es buena para todos. Puede ser mejor que yo. Puede ser el mejor jugador colombiano de la historia."
+const descPlayer = "Futbolista de 21 años, medio de contención, 8 años jugando en nivel de alto rendimiento, habilidoso ambidiestro, potencia en el tiro, muy buena técnica de control de balón, buen fondo físico y velocidad de arranque."
 
 const Cover = ({category, setCategory}) => {
   return(

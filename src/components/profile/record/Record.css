@@ -1,0 +1,10 @@
+.metrics-demo{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+.metrics-demo img{
+    margin: 1rem auto;
+    width: 70%;
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Input } from 'antd';
 import './Navbar.css'
+import { Link } from 'react-router-dom'
 
 const { Search } = Input;
 
@@ -9,7 +10,7 @@ const Navbar = () => {
     <>
       <header id="mainheader">
         <nav>
-          <img className="logo" src="/img/navbar/Scoutlink_tipografia_blanca.png" alt="Scoutlink logo"/>
+          <Link to='/'><img className="logo" src="/img/navbar/Scoutlink_tipografia_blanca.png" alt="Scoutlink logo"/></Link>
         </nav>
         <nav>
         <div className="search">

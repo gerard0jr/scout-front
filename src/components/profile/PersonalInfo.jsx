@@ -5,10 +5,10 @@ import LanguageCard from './LanguageCard';
 const personalInfo = {
   education:"Preparatoria",
   achievements:[
-    "Lorem ipsum dolor sit amet consectetur adipiscing elit blandit",
-    "Magna placerat lobortis rhoncus dictumst odio tincidunt natoque",
-    "Augue ultricies leo mus gravida eget class",
-    "Per vivamus congue taciti morbi quis tortor pellentesque litora"
+    "Mejor jugador liga 2018",
+    "13 goles temporada 2017-2018",
+    "Seleccionado Estatal Olimpiada Juvenil 2016",
+    "Jugador de fuerzas básicas Pumas de la UNAM 2014-2015"
   ],
   passport:true,
   languages:[
